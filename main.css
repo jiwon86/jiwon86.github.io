@@ -1,0 +1,88 @@
+body {
+    margin: 0px;
+}
+
+
+.header {
+    background-image: url("./img/1.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 480px;
+}
+
+
+.nameInfo {
+    font-size: 3em;
+    font-family: "Single Day";
+    text-align: right;
+}
+
+.fstTab {
+    height: 100vh;
+    background-image: url("./img/1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.secTab {
+    height: 100vh;
+    background-image: url("./img/2.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.thrTab {
+    height: 100vh;
+    background-image: url("./img/3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.title {
+    top: 25%;
+    width : 85%;
+    height: 53%;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+
+.g{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+    padding: 5%;
+}
+
+.galery{
+    position: relative;
+    width: 30%;
+    margin: 5px;
+}
+
+.galery:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+.picture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border-color: #fb85b9 ;
+    background-image: url("./img/1.png");
+    background-size: 100%;
+
+}
+
+
+@font-face {
+    font-family: "NotoSansKR"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("../assets/fonts/Noto_Sans_KR/NotoSansKR-Regular.otf") format("opentype"); /* 폰트파일 불러오기 */
+  }
