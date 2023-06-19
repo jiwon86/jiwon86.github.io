@@ -2,72 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Expires" CONTENT="-1">
+        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="main.css">
-    <title>경은 지원 결혼합니다.</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <title>Document</title>
 </head>
 <body>
+    <div class="swiper-container main">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- 1 -->
+            <div class="swiper-slide">
+                <div class="fstTab">
+                    <img src="img/weddingTitle.png" class="title">
+                </div>
+            </div>
 
-<div class="main">
-    <div class="fstTab">
-        <img src="img/weddingTitle.png" class="title">
-    </div>
-    <div class="secTab">
+            <!-- 2 -->
+            <div class="swiper-slide">
+                <div class="secTab">
+                </div>
+            </div>
 
-    </div>
-    <div class="thrTab">
-        <div class="g">
-            <div class="galery" id="gall">
-                <button class="picture" >1</button>
+            <!-- 3 -->
+            <div class="swiper-slide Tab" style="background-image: url(./img/3.png);" >
+                <div class="g">
+                    <div class="galery" >
+                        <img class="picture" src="img/img1.jpg" alt="0"/>
+                    </div>
+                    <div class="galery">
+                        <img class="picture" src="img/img2.jpg" alt="1" >
+                    </div>
+                    <div class="galery" >
+                        <img class="picture" src="img/img3.jpg" alt="2">
+                    </div>
+                    <div class="galery" >
+                        <img class="picture" >
+                    </div>
+                    <div class="galery">
+                        <img class="picture" >
+                    </div>
+                    <div class="galery">
+                        <img class="picture" >
+                    </div>
+                    <div class="galery">
+                        <img class="picture" >
+                    </div>
+                    <div class="galery" >
+                        <img class="picture" >
+                    </div>
+                    <div class="galery">
+                        <img class="picture" >
+                    </div>
+                </div>
             </div>
-            <div class="galery" id="gall">
-                <button class="picture" >1</button>
+
+            <!-- 4 -->
+            <div class="swiper-slide Tab" style="background-image: url(./img/4.png);">
             </div>
-            <div class="galery" id="gall">
-                <button class="picture" >1</button>
+
+            <!-- 5 -->
+            <div class="swiper-slide Tab" style="background-image: url(./img/5.png); background-position-y: -30px;">
             </div>
-            <div class="galery" id="gall">
-                <button class="picture" >1</button>
+
+            <!-- 6 -->
+            <div class="swiper-slide Tab" style="background-image: url(./img/6.png); background-position-y: -30px;">
             </div>
-            <div class="galery" id="gall">
-                <button class="picture" >1</button>
-            </div>
-            <div class="galery" id="gall">
-                <button class="picture" >1</button>
-            </div>
-            <div class="galery" id="gall">
-                <button class="picture" >1</button>
-            </div>
-            <div class="galery" id="gall">
-                <button class="picture" >1</button>
-            </div>
-            <div class="galery" id="gall">
-                <button class="picture" >1</button>
-            </div>
+            
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+
+<div class="swiper-container Mygalery">
+    <!-- Additional required wrapper -->
+    <button class="closeButt">X</button>
+    <div class="swiper-wrapper">
+        
+      <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/img1.jpg);"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/img2.jpg);"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/img3.jpg);"></div>
         </div>
     </div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-</div>
-
-<div class="imgViewer">
-    <div class="imgHeader">
-        <text style="color: rgb(174, 174, 174); font-size: 2vh; transform: translate(10px,  10px); position: absolute;">1 / 9</text>
-        <button class="closeButt">X</button>
-    </div>
-
-    <div class="imgArea">
-       
-    </div>
-</div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
 
 
 <script src="main.js"></script>
-
 </body>
+
+
 </html>

@@ -27,14 +27,14 @@ body {
 
 .secTab {
     height: 100vh;
-    background-image: url("./img/2.jpg");
+    background-image: url("./img/2_2.png");
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position-y: -20px;
 }
 
-.thrTab {
+.Tab {
     height: 100vh;
-    background-image: url("./img/3.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -61,7 +61,7 @@ body {
 .galery{
     position: relative;
     width: 30%;
-    margin: 5px;
+    margin: 3px;
 }
 
 .galery:after {
@@ -73,11 +73,10 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    border-radius: 10px;
-    background-color: aliceblue;
+    border-radius: 5px;
+    border : solid 1px;
     border-color: #fb85b9 ;
-    background-image: url("./img/img1.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
@@ -109,11 +108,14 @@ body {
     height: 80%;
     position: relative;
     background-color: black;
-    background-image: url("./img/img1.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
 
+.on{
+    animation: fadeIn 0.5s;
+    -webkit-animation: fadeIn 0.5s;
 }
 
 .imgHeader{
@@ -123,18 +125,66 @@ body {
 }
 
 .closeButt{
-    float: right;
-    background: transparent;
-    color: rgb(174, 174, 174);
-    border: transparent;
-    font-size: 3vh;
-    transform: translate(-10px , 10px);
+     background: transparent;
+     color: pink;
+     border: transparent;
+     font-size: 3vh;
+     transform: translate(-10px , 10px);
+     position: absolute;
+     left: 95%;
+     z-index: 2;
 }
 
 .pic {
     width: 100%;
     height: 100%;
     position: absolute;
+}
+
+.imgZone{
+    width: 100%;
+}
+
+
+.main {
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+
+}
+
+.main.off{
+    visibility: hidden;
+}
+
+.Mygalery {
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    top: 0;
+    background-color: black;
+    position: fixed;
+    visibility: hidden;
+}
+
+.Mygalery.on{
+    visibility: visible;
+}
+
+.Mygalery.off{
+    visibility: visible;
+    animation: imgOff 0.5s;
+    -webkit-animation: imgOff 0.5s;
+}
+
+.swiper-pagination-bullet { width: 12px; height: 12px; background: pink; border: 1px solid pink; opacity: 1; }
+.swiper-pagination-bullet-active { width: 12px; transition: width .5s; border-radius: 5px; background: #fb85b9; border: 1px solid transparent; }
+.swiper-button-next{
+    color: pink;
+}
+
+.swiper-button-prev{
+    color: pink;
 }
 
 @font-face {
