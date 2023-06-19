@@ -6,6 +6,16 @@ let main = document.querySelector(".main");
 let img = document.querySelectorAll(".picture");
 let closeButt = document.querySelector(".closeButt");
 
+// resize Event
+window.addEventListener('resize', () => {
+    vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+window.addEventListener('touchend', () => {
+    vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
 
 // SWiper Main Set
 
