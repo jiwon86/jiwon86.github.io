@@ -62,7 +62,10 @@ let swiper = new Swiper('.main', {
 function imgPopOn (e) {
     var index = e.target.alt;
     viewer.classList.toggle("on");
-    
+
+    vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    swiper2.init();
     swiper2.slideToLoop(index, 1 , false);
     console.log(index);  
     // swiper Disable
