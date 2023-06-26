@@ -220,6 +220,7 @@ ul {
 .flower1{
     background-image: url(./img/flower.gif); 
     background-position: bottom;
+    background-size: contain;
 }
 
 @font-face {
