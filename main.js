@@ -15,7 +15,8 @@ let swiper = new Swiper('.main', {
     direction: 'vertical',
     loop: false,
     mousewheel:true,
-    spaceBetween:0,
+    spaceBetween:10,
+    resistance : false,
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
