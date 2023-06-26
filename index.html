@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
     <META HTTP-EQUIV="Expires" CONTENT="-1">
+
+     <script>
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+     </script>   
         
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="main.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=71nz0q5bbz"></script>
     <title>Document</title>
 </head>
 <body>
@@ -23,13 +29,44 @@
             </div>
 
             <!-- 2 -->
-            <div class="swiper-slide">
-                <div class="secTab">
+            <div id="tab2" class="swiper-slide Tab">
+                <img src="img/nameB.png" style="width:fit-content; height: 10%; margin-top: 5%; margin-bottom: 10%;">
+                <div id="t0" class="text1" style="height: 10%; width: fit-content;">
+                    오랜시간 만나온 저희 두 사람<br>
+                    이제 평생을 함께 하고자 합니다.
+                </div>
+
+                <div id="t1" class="text1" style="height: 10%; margin-top: 5%;">
+                    같은 길을 걷게 될 첫 순간을 부디 귀한 발걸음 하시어<br>
+                    저희 두사람의 앞날을 축복해주시면 감사하겠습니다.<br>
+                </div>
+
+                <div id="t2" class="text1" style=" width:50%; height: 10%; margin-top: 5%;">
+                    박동균 김지연 의 아들 지원<br>
+                    최영철 이미숙 의 딸  경은<br>
+                </div>
+
+
+
+                <div id="t3" class="text1" style="margin: auto; font-size: 1.3em; font-weight: 250; line-height: 1.6em;">
+                    <div style="font-family: Breathing, sans-serif; color: pink;">
+                        <h1>Wedding Day</h1>
+                    </div><br>
+                    <div style="width: fit-content; margin: auto;">
+                        2023년 9월 17일<br>
+                        일요일 오전 11시<br><br>
+
+                        AW컨벤션 안산<br>
+                        6층 테라스볼룸홀
+                    </div>
                 </div>
             </div>
 
             <!-- 3 -->
-            <div class="swiper-slide Tab" style="background-image: url(./img/3.png);" >
+            <div class="swiper-slide Tab">
+                <div class="tabHeader">
+                    <img class="tabHeaderImg"src="img/Galley.png">
+                </div>
                 <div class="g">
                     <div class="galery" >
                         <img class="picture" src="img/img1.jpg" alt="0"/>
@@ -59,14 +96,40 @@
                         <img class="picture" >
                     </div>
                 </div>
+
+                <img src="img/nameB.png" style="width:80%; height: 20%; ">
             </div>
 
             <!-- 4 -->
-            <div class="swiper-slide Tab" style="background-image: url(./img/4.png);">
+            <div class="swiper-slide Tab">
             </div>
 
             <!-- 5 -->
-            <div class="swiper-slide Tab" style="background-image: url(./img/5.png); background-position-y: -30px;">
+            <div class="swiper-slide Tab">
+                <div class="tabHeader">
+                    <img class="tabHeaderImg"src="img/Location.png">
+                </div>
+
+                <div id="map" class="map"></div>
+
+                <div style="align-self: normal; margin-left: 5%; font-family: ChosunSm , serif;">
+                    <h3>AW컨벤션 안산</h3>
+                    <ul>
+                        <li>경기 안산시 단원구 광덕1로 171</li>
+                    </ul>
+                </div>
+
+                <div style="align-self: normal; margin-left: 5%; font-family: ChosunSm , serif;">
+                    <h3>지하철</h3>
+                    <ul>
+                        <li>4호선 고잔역 2번 출구 셔틀버스 5분 ~ 7분 간격 수시운행</li>
+                        <li>셔틀버스는 예식 2시간 후까지 운행 합니다.</li>
+                        <li>고잔역에서 도보 이동 시 15 ~ 20분 소요</li>
+                    </ul>
+                </div>
+               
+
+                
             </div>
 
             <!-- 6 -->

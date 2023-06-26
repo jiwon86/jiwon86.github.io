@@ -1,17 +1,19 @@
+
 body {
     margin: 0px;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .fstTab {
-    height: 100vh;
+    height: 100%;
     background-image: url("./img/1.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .secTab {
-    height: 100vh;
+    height: 100%;
     background-image: url("./img/2_2.png");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -19,11 +21,27 @@ body {
 }
 
 .Tab {
-    height: 100vh;
+    height: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
+.tabHeader{
+    margin: 5%;
+    display: inherit;
+    height: 5%;
+    justify-content: center;
+}
+.tabHeaderImg{
+    width: 50%;
+    margin: auto;
+    display: block;
+}
 .title {
     top: 25%;
     width : 85%;
@@ -33,14 +51,24 @@ body {
     margin: auto;
 }
 
+.text1{
+    font-size: 1rem;
+    font-family: ChosunSm , serif;
+    line-height: 2.3em;
+    text-align: center;
+    font-weight: 100;
+    white-space : nowrap; 
+    opacity: 0;
+}
 
 .g{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    top: 20%;
+    top: 5%;
     padding: 5%;
+    align-self: normal;
 }
 
 .galery{
@@ -172,10 +200,38 @@ body {
     color: pink;
 }
 
+
+.map {
+    width: 90%;
+    height :30%;
+    border: solid 1px pink;
+}
+
+ul {
+    font-size: 1em;
+}
+
+.tt{
+    animation: textFadeIn 1s;
+    -webkit-animation: textFadeIn 1s;
+    animation-fill-mode: forwards;
+}
+
+.flower1{
+    background-image: url(./img/flower.gif); 
+    background-position: bottom;
+}
+
 @font-face {
-    font-family: "NotoSansKR"; /* 사용하고 싶은 font-family명을 지정 */
-    src: url("../assets/fonts/Noto_Sans_KR/NotoSansKR-Regular.otf") format("opentype"); /* 폰트파일 불러오기 */
+    font-family: "ChosunSm"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("./fonts/ChosunSm.TTF") format("opentype"); /* 폰트파일 불러오기 */
   }
+
+@font-face {
+    font-family: "Breathing"; /* 사용하고 싶은 font-family명을 지정 */
+    src: url("./fonts/Breathing.TTF") format("opentype"); /* 폰트파일 불러오기 */
+  }
+
 
 @-webkit-keyframes fadeIn {
     from {
@@ -194,5 +250,14 @@ body {
     }to{
         transform: scale(0 , 0);
         opacity: 0;
+    }
+ }
+
+ @-webkit-keyframes textFadeIn {
+    from {
+        opacity: 0;
+       
+    }to{
+        opacity: 1;
     }
  }
