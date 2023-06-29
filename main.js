@@ -27,9 +27,6 @@ let swiper = new Swiper('.main', {
     scrollbar: {
         el: '.swiper-scrollbar',
     },
-    on : {
-        slideChangeTransitionEnd : aa
-    },
  });
 
  // SWiper Galery Set
@@ -50,32 +47,6 @@ let swiper = new Swiper('.main', {
         prevEl: ".swiper-button-prev",
     },
 });
-
-function aa(e) {
-    var index = swiper.activeIndex;
-    if(index == 1 && event1 == 0){
-        for (let i = 0; i < inText.length; i++) {
-            var id = "t" + i
-            inText[i] = document.getElementById(id);
-            inText[i].addEventListener("animationend" , function(){
-                textAnime(i);
-            });
-            
-        }
-        event1 = 1;
-        inText[0].classList.toggle("tt");
-    }
-}
-
-function textAnime(i){
-    console.log(inText[i])
-    if (i != 3){
-        inText[i+1].classList.toggle("tt");
-    }else{
-        inText[i].classList.toggle("flower1");
-      //document.getElementById("tab2").classList.toggle("flower1");
-    }
-}
 
 //----------------------------------------------
 
