@@ -108,7 +108,9 @@ var markerOptions = {
 
 var marker = new naver.maps.Marker(markerOptions);
 marker.setAnimation(naver.maps.Animation.BOUNCE);
-
+naver.maps.Event.addListener(marker, "click" , function(){
+    window.open("https://naver.me/IxD7uOQW", "_blank");
+});
 // Event Set
 
 img.forEach(element => {
