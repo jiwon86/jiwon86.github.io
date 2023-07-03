@@ -117,6 +117,14 @@ img.forEach(element => {
     element.addEventListener("click", imgPopOn);
 });
 
+window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+window.addEventListener('touchend', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
 
 closeButt.addEventListener("click", imgPopOff);
 viewer.addEventListener("animationend" , imgPopReset);
