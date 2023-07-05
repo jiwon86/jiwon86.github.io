@@ -48,34 +48,49 @@
                     <div style="display: grid; grid-template-columns: repeat(4, 1fr); 
                                 grid-template-rows: repeat(6, 1fr); grid-gap: 5px;
                                 position: absolute; width: 100%; height: 100%;">
-                        <div class="picture" style="background-image: url(./img/somenail/some\ \(12\).png);"></div>
-                        <div class="picture" style="background-image: url(./img/somenail/some\ \(11\).png);"></div>
-                        <div class="picture" style="background-image: url(./img/somenail/some\ \(13\).png);"></div>
-                        <div class="picture" style="background-image: url(./img/somenail/some\ \(14\).png);"></div>
 
-                        <div class="picture" style="background-image: url(./img/somenail/tt.jpg);"></div>
+                        <div class="picture" style="background-image: url(./img/somenail/some\ \(1\).png);" index="0"></div>
+                        <div class="picture" style="background-image: url(./img/somenail/some\ \(2\).png);" index="1"></div>
+                        <div class="picture" style="background-image: url(./img/somenail/some\ \(3\).png);" index="2"></div>
+                        <div class="picture" style="background-image: url(./img/somenail/some\ \(4\).png);" index="3"></div>
+                        <div class="picture" style="background-image: url(./img/somenail/some\ \(5\).png);" index="4"></div>
 
-                        <div class="picture" style="background-image: url(./img/somenail/some\ \(10\).png);"></div>
+                        <div class="picture" style="background-image: url(./img/somenail/some\ \(6\).png);" index="5"></div>
+                        <div class="picture" style="background-image: url(./img/somenail/some\ \(7\).png);" index="6"></div>
+                        <div class="picture" style="background-image: url(./img/somenail/some\ \(8\).png);" index="7"></div>
+                        <div class="picture" style="background-image: url(./img/somenail/some\ \(9\).png);" index="8"></div>
+                        <div class="picture" style="background-image: url(./img/somenail/some\ \(10\).png);" index="9"></div>
 
-                        <div class="picture" style="background-image: url(./img/somenail/tt2.png);"></div>
-                        <div class="picture" style="background-image: url(./img/img3.jpg);"></div>
+                        <div class="picture" style="background-image: url(./img/somenail/some\ \(11\).png);" index="10"></div>
+                        <div class="picture" style="background-image: url(./img/somenail/some\ \(12\).png);" index="11"></div>
+                        <div class="picture" style="background-image: url(./img/somenail/some\ \(13\).png);" index="12"></div>
+                        <div class="picture" style="background-image: url(./img/somenail/some\ \(14\).png);" index="13"></div>
+                        <div class="picture" style="background-image: url(./img/somenail/some\ \(15\).png);" index="14"></div>
 
-                        <div class="picture" style="background-image: url(./img/img1.jpg);"></div>
-
-                        <div class="picture" style="background-image: url(./img/somenail/some\ \(15\).png);"></div>
-                        <div class="picture" style="background-image: url(./img/img3.jpg);"></div>
-                        <div class="picture" style="background-image: url(./img/img2.jpg);"></div>
-                        <div class="picture" style="background-image: url(./img/somenail/some\ \(19\).png);"></div>
                     </div>
                 </div>
 
-                <img style="margin: auto; width: 40%;" src="./img/nameB.png">
+                <img style="margin: auto; width: 30%; height: 7%;" src="./img/nameB.png">
             </div>
 
             <!-- 4 -->
             <div class="swiper-slide Tab">
                 <div class="tabHeader" style="background-image: url(./img/Location.png);"></div>
-                <div id="map" class="map"></div>
+                <div id="map" class="map">
+                    <button class="btnPark" onclick="moveMap(1)">웨딩홀</button>
+                    <button class="btnPark" onclick="moveMap(2)">2주차장</button>
+                    <button class="btnPark" onclick="moveMap(3)">3주자창</button>
+                    <button class="btnPark" onclick="moveMap(4)">4주차장</button>
+                </div>
+                <p style="     z-index: 2;
+                top: 90%;
+                position: sticky;
+                text-align: center;
+                width: 90%;
+                background-color: rgba(0,0,0,0.3);
+                margin: 0;
+                color: white;
+                font-size: medium;">마커 클릭시 지도로 이동합니다</p>
                 <img class="infoImg"  src="./img/info1.png">
                 <div style="margin-top: 5%;  margin-bottom: 5%;">
                     <img class="infoImg"  src="./img/info2.png">
@@ -88,7 +103,7 @@
 
             <!-- 5 -->
             <div class="swiper-slide Tab">
-                <div class="bb" style=" height: 10%; background-size: 60%; background-image: url(./img/tab5/1.png);"></div>
+                <div class="bb" style=" height: 10%; background-size: 60%; background-image: url(./img/tab5/1.png); background-position-y: 10px;"></div>
                 <div style="height: 5%;"></div>
                 <div class="bb" style=" height: 35%; background-size: contain; background-image: url(./img/tab5/2.png);"></div>
                 <div style="height: 5%;"></div>
@@ -126,7 +141,7 @@
                         모 이미숙
                         <div>
                             <button class="btnAc" style="background-color: black; color: white;">계좌</button>
-                            <button class="btnAc" style="background-color: black; color: white;" onclick="document.location.href='tel:010-5313-62860'"><i class="fa-solid fa-phone"></i></button>  
+                            <button class="btnAc" style="background-color: black; color: white;" onclick="document.location.href='tel:010-5313-6286'"><i class="fa-solid fa-phone"></i></button>  
                         </div>
                     </div>
                 </div>
@@ -148,13 +163,55 @@
         
       <!-- Slides -->
         <div class="swiper-slide">
-            <div class="imgArea" style="background-image: url(./img/img1.jpg);"></div>
+            <div class="imgArea" style="background-image: url(./img/pic/1.png);"></div>
         </div>
         <div class="swiper-slide">
-            <div class="imgArea" style="background-image: url(./img/img2.jpg);"></div>
+            <div class="imgArea" style="background-image: url(./img/pic/2.png);"></div>
         </div>
         <div class="swiper-slide">
-            <div class="imgArea" style="background-image: url(./img/img3.jpg);"></div>
+            <div class="imgArea" style="background-image: url(./img/pic/3.png);"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/pic/4.png);"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/pic/5.png);"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/pic/6.png);"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/pic/7.png);"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/pic/8.png);"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/pic/9.png);"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/pic/10.png);"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/pic/11.png);"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/pic/12.png);"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/pic/13.png);"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/pic/14.png);"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/pic/15.png);"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/pic/16.png);"></div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/pic/17.png);"></div>
         </div>
     </div>
     <!-- If we need pagination -->
