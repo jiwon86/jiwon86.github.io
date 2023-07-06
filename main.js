@@ -35,7 +35,9 @@ let swiper = new Swiper('.main', {
         },
         activeIndexChange : function(e){
             var page = document.getElementById("mainPagination");
-            console.log(e.activeIndex);
+            var div = document.getElementById("acInfo");
+            div.classList.remove("on");
+
             if(e.activeIndex != 0 && e.activeIndex !=5) {
                 page.style.visibility = "visible";
             }else {
@@ -62,6 +64,8 @@ let swiper = new Swiper('.main', {
         activeIndexChange : function(e){
             var pInfo = document.getElementById("picInfo");
             pInfo.innerHTML = e.activeIndex + " / 17"
+
+   
         }
     }
 });
@@ -190,6 +194,7 @@ function moveMap(x){
 function acInfo(e , i) {
     var div = document.getElementById("acInfo");
     var span = document.getElementById("acInfo2");
+    var copyOk = document.getElementById("copyOk");
     var x = 60;
     var y = e.target.offsetTop - 59;
 
@@ -209,6 +214,9 @@ function acInfo(e , i) {
     div.classList.remove("top");
     div.classList.remove("top2");
 
+
+
+
     if(i < 4) {
         div.classList.toggle("on");
         div.classList.toggle("top");
@@ -216,6 +224,13 @@ function acInfo(e , i) {
         div.classList.toggle("on");
         div.classList.toggle("top2");
     }
+
+
+    if(div.className.indexOf("op") == 12){
+        copyOk.classList.toggle("on");
+    }
+
+
 
     window.navigator.clipboard.writeText(text[i-1]).then(() => {
   
@@ -226,6 +241,18 @@ function acInfo(e , i) {
 
 function preventDefault(e) {
     e.preventDefault();
+}
+
+function aniEnd(e){
+
+    var aniName = e.animationName;
+    if(aniName == "fadeIn") {
+ 
+        ck.classList.toggle("on");
+        ck.classList.toggle("ff");
+    }else{
+        ck.classList.toggle("ff");
+    }
 }
 
 
@@ -244,3 +271,6 @@ window.addEventListener('touchend', () => {
 
 closeButt.addEventListener("click", imgPopOff);
 viewer.addEventListener("animationend" , imgPopReset);
+
+var ck = document.getElementById("copyOk");
+ck.addEventListener("animationend" , aniEnd);

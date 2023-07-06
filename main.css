@@ -143,9 +143,28 @@ body {
     background-position: center;
 }
 
+.copyOk2{
+    position: absolute;
+    top: 40%;
+    float: center;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    visibility: hidden;
+    color: white;
+    
+}
+
 .on{
+    visibility: visible;
     animation: fadeIn 0.5s;
     -webkit-animation: fadeIn 0.5s;
+}
+
+.ff{
+    visibility: visible;
+    animation: imgOff 1.0s;
+    -webkit-animation: imgOff 1.0s;
 }
 
 .imgHeader{
@@ -291,7 +310,7 @@ ul {
 
 
 .balloon {
-    position: relative;
+    position: absolute;
     display: inline-block;
     visibility: hidden;
     width: 210px;
