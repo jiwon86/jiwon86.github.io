@@ -227,7 +227,7 @@ function acInfo(e , i) {
 
 
     if(div.className.indexOf("op") == 12){
-        copyOk.classList.toggle("on");
+        copyOk.classList.toggle("oa");
     }
 
 
@@ -248,7 +248,7 @@ function aniEnd(e){
     var aniName = e.animationName;
     if(aniName == "fadeIn") {
  
-        ck.classList.toggle("on");
+        ck.classList.toggle("oa");
         ck.classList.toggle("ff");
     }else{
         ck.classList.toggle("ff");

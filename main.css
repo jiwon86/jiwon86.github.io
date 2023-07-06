@@ -161,6 +161,12 @@ body {
     -webkit-animation: fadeIn 0.5s;
 }
 
+.oa{
+    visibility: visible;
+    animation: fadeIn 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-animation: fadeIn 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .ff{
     visibility: visible;
     animation: imgOff 1.0s;
@@ -177,10 +183,10 @@ body {
      background: transparent;
      color: pink;
      border: transparent;
-     font-size: 3vh;
+     font-size: 30px;
      transform: translate(-10px , 10px);
      position: absolute;
-     left: 95%;
+     left: 90%;
      z-index: 2;
 }
 
@@ -350,7 +356,7 @@ ul {
 
 .balloon.top2:after, .balloon.bottom:after {
     border-width: 15px 10px;
-    left: 81%;
+    left: 78%;
     margin-left: -10px;
 }
 
