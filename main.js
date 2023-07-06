@@ -6,6 +6,7 @@ let closeButt = document.querySelector(".closeButt");
 let introText = document.querySelector(".text1");
 let inText = new Array(4);
 let event1 = 0;
+var index =1;
 
 
 // SWiper Main Set
@@ -27,6 +28,21 @@ let swiper = new Swiper('.main', {
     scrollbar: {
         el: '.swiper-scrollbar',
     },
+    on :{
+        init : function(e){
+          var page = document.getElementById("mainPagination");
+          page.style.visibility = "hidden"
+        },
+        activeIndexChange : function(e){
+            var page = document.getElementById("mainPagination");
+            console.log(e.activeIndex);
+            if(e.activeIndex != 0 && e.activeIndex !=5) {
+                page.style.visibility = "visible";
+            }else {
+                page.style.visibility = "hidden"
+            }
+        }
+    }
  });
 
  // SWiper Galery Set
@@ -37,28 +53,31 @@ let swiper = new Swiper('.main', {
     loopAdditionalSlides : 1,
     centeredSlides: true,
     // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
 
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    on :{
+        activeIndexChange : function(e){
+            var pInfo = document.getElementById("picInfo");
+            pInfo.innerHTML = e.activeIndex + " / 17"
+        }
+    }
 });
 
 //----------------------------------------------
 
 function imgPopOn (e) {
-    var index = e.target.getAttribute("index");
-    viewer.classList.toggle("on");
+    index = e.target.getAttribute("index");
 
+    viewer.classList.toggle("on");
+    
     swiper2.init();
-    swiper2.slideToLoop(index, 1 , false);
-    console.log(index);  
+    swiper2.slideToLoop(index, 1 , false); 
     // swiper Disable
     swiper.disable();
+    
 }
 
 function imgPopOff() {
@@ -204,6 +223,11 @@ function acInfo(e , i) {
     span.innerHTML = text[i-1];
 
 }
+
+function preventDefault(e) {
+    e.preventDefault();
+}
+
 
 img.forEach(element => {
     element.addEventListener("click", imgPopOn);

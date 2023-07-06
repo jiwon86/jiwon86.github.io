@@ -16,7 +16,14 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=71nz0q5bbz"></script>
     <script src="https://kit.fontawesome.com/e2a7ce7ff4.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+
+    <meta property="og:url" content="https://jiwon86.github.io/">
+    <meta property="og:title" content="경은 & 지원 결혼합니다 :)">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jiwon86.github.io/img/somenail/some%20(13).png">
+    <meta property="og:description" content="경은♥지원 청첩장이 도착했어요!">
+
+    <title>경은 & 지원 결혼합니다 :)</title>
 </head>
 <body>
     <div class="swiper-container main">
@@ -146,10 +153,18 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 6 -->
+            <div class="swiper-slide Tab">
+                  <video controls preload="auto" style=" width: 100%; height: 100%; position: absolute;">
+                    <source src="./img/movie.mp4" type="video/mp4">
+                    해당 브라우저에서는 지원하지 않습니다.
+                  </video>
+            </div>
             
         </div>
         <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination" id="mainPagination"></div>
       
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
@@ -158,6 +173,7 @@
 
 <div class="swiper-container Mygalery">
     <!-- Additional required wrapper -->
+    <div id="picInfo"style="position: absolute;   width: 20%;   color: pink;  top: 2%;  left: 2%;"></div>
     <button class="closeButt">X</button>
     <div class="swiper-wrapper">
         
@@ -218,12 +234,12 @@
     <div class="swiper-pagination"></div>
   
     <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev" ></div>
+    <div class="swiper-button-next" ></div>
   
   </div>
 
-  <div class="balloon" id="acInfo"><span id="acInfo2"></span><button class="copy">복사</button></div>
+  <div class="balloon" id="acInfo"><span id="acInfo2"></span></div>
 
 
 <script src="main.js"></script>
