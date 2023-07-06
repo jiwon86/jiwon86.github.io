@@ -112,17 +112,17 @@
                     <div>
                         🤵 박지원
                         <div>
-                            <button class="btnAc" style="background-color: pink; color: white;">계좌</button>
+                            <button class="btnAc" style="background-color: pink; color: white;" onclick="acInfo(event, 1)">계좌</button>
                             <button class="btnAc" style="background-color: pink; color: white;" onclick="document.location.href='tel:010-4733-0189'"><i class="fa-solid fa-phone"></i></button>  
                         </div>
                         부 박동균
                         <div>
-                            <button class="btnAc" style="background-color: black; color: white;">계좌</button>
+                            <button class="btnAc" style="background-color: black; color: white;" onclick="acInfo(event, 2)">계좌</button>
                             <button class="btnAc" style="background-color: black; color: white;" onclick="document.location.href='tel:010-6233-0184'"><i class="fa-solid fa-phone"></i></button>
                         </div>
                         모 김지연
                         <div>
-                            <button class="btnAc" style="background-color: black; color: white;">계좌</button>
+                            <button class="btnAc" style="background-color: black; color: white;" onclick="acInfo(event, 3)">계좌</button>
                             <button class="btnAc" style="background-color: black; color: white;"onclick="document.location.href='tel:010-7564-0189'"><i class="fa-solid fa-phone"></i></button>
                         </div>
                     </div>
@@ -130,17 +130,17 @@
                     <div>
                         👰‍ 최경은 
                         <div>
-                            <button class="btnAc" style="background-color: pink; color: white;">계좌</button>
+                            <button class="btnAc" style="background-color: pink; color: white;" onclick="acInfo(event, 4)">계좌</button>
                             <button class="btnAc" style="background-color: pink; color: white;" onclick="document.location.href='tel:010-3273-2025'"><i class="fa-solid fa-phone"></i></button>  
                         </div>
                         부 최영철
                         <div>
-                            <button class="btnAc" style="background-color: black; color: white;">계좌</button>
+                            <button class="btnAc" style="background-color: black; color: white;" onclick="acInfo(event, 5)">계좌</button>
                             <button class="btnAc" style="background-color: black; color: white;" onclick="document.location.href='tel:010-3733-0759'"><i class="fa-solid fa-phone"></i></button>  
                         </div>
                         모 이미숙
                         <div>
-                            <button class="btnAc" style="background-color: black; color: white;">계좌</button>
+                            <button class="btnAc" style="background-color: black; color: white;" onclick="acInfo(event, 6)">계좌</button>
                             <button class="btnAc" style="background-color: black; color: white;" onclick="document.location.href='tel:010-5313-6286'"><i class="fa-solid fa-phone"></i></button>  
                         </div>
                     </div>
@@ -222,6 +222,8 @@
     <div class="swiper-button-next"></div>
   
   </div>
+
+  <div class="balloon" id="acInfo"><span id="acInfo2"></span><button class="copy">복사</button></div>
 
 
 <script src="main.js"></script>

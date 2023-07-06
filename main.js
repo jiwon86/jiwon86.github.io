@@ -168,6 +168,43 @@ function moveMap(x){
 
 // Event Set
 
+function acInfo(e , i) {
+    var div = document.getElementById("acInfo");
+    var span = document.getElementById("acInfo2");
+    var x = 60;
+    var y = e.target.offsetTop - 59;
+
+    var text = [
+        "국민 668402-04-057433",
+        "신한 938-04-239134",
+        "국민 422401-01-439301",
+        "국민 660401-01-781835",    
+        "기업 375-023450-01-011",
+        "농협 211057-51-007453"
+
+    ]
+
+    div.style.left = x + "px";
+    div.style.top = y + "px";
+
+    div.classList.remove("top");
+    div.classList.remove("top2");
+
+    if(i < 4) {
+        div.classList.toggle("on");
+        div.classList.toggle("top");
+    }else{
+        div.classList.toggle("on");
+        div.classList.toggle("top2");
+    }
+
+    window.navigator.clipboard.writeText(text[i-1]).then(() => {
+  
+    });
+    span.innerHTML = text[i-1];
+
+}
+
 img.forEach(element => {
     element.addEventListener("click", imgPopOn);
 });
