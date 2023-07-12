@@ -3,7 +3,6 @@ body {
     margin: 0px;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
-    height: -webkit-fill-available;
     background-color: white;
 }
 
@@ -67,8 +66,10 @@ body {
 }
 
 .g{
-    position: relative;
+    position: inherit;
     width: 90%;
+    max-width: 450px;
+    height: 75%;
 }
 
 .g:after {
@@ -249,6 +250,7 @@ body {
     width: 90%;
     height :30%;
     border: solid 1px pink;
+    max-width: 450px;
 }
 .btnPark{
     top: 2px;
@@ -312,6 +314,7 @@ ul {
 
 .infoImg {
     width: 100%;
+    max-width: 450px;
 }
 
 

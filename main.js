@@ -62,10 +62,9 @@ let swiper = new Swiper('.main', {
     },
     on :{
         activeIndexChange : function(e){
+        
             var pInfo = document.getElementById("picInfo");
-            pInfo.innerHTML = e.activeIndex + " / 17"
-
-   
+            pInfo.innerHTML = (e.realIndex+1) + " / 18"
         }
     }
 });

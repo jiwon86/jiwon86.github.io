@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
     <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
     <META HTTP-EQUIV="Expires" CONTENT="-1">
 
@@ -26,6 +26,11 @@
     <title>9/17 저희가 결혼합니다 :)</title>
 </head>
 <body>
+    <div style="    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    margin: auto;">
     <div class="swiper-container main">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -33,7 +38,7 @@
             <div class="swiper-slide Tab" style="background-image: url(./img/1.png); background-size: cover; 
             background-position: center;">
                     <img src="img/weddingTitle.png" class="title">
-                    <img src="img/2_footer.png" style="position: absolute; top: 80%; width: 62%;">
+                    <img src="img/2_footer.png" style="position: absolute; top: 80%; width: 62%; max-width: 300px;">
             </div>
 
             <!-- 2 -->
@@ -89,7 +94,7 @@
                     <button class="btnPark" onclick="moveMap(3)">3주자창</button>
                     <button class="btnPark" onclick="moveMap(4)">4주차장</button>
                 </div>
-                <p style="     z-index: 2;
+                <p style="     z-index: 2; max-width: 450px;
                 top: 90%;
                 position: sticky;
                 text-align: center;
@@ -99,7 +104,7 @@
                 color: white;
                 font-size: medium;">마커 클릭시 지도로 이동합니다</p>
                 <img class="infoImg"  src="./img/info1.png">
-                <div style="margin-top: 5%;  margin-bottom: 5%;">
+                <div style="margin-top: 5%;  margin-bottom: 5%;   display: flex;  flex-direction: column;">
                     <img class="infoImg"  src="./img/info2.png">
                     <img class="infoImg"  src="./img/info3.png">
                     <img class="infoImg"  src="./img/info4.png">
@@ -110,7 +115,7 @@
 
             <!-- 5 -->
             <div class="swiper-slide Tab">
-                <div class="bb" style=" height: 10%; background-size: 60%; background-image: url(./img/tab5/1.png); background-position-y: 10px;"></div>
+                <div class="bb" style="    max-width: 400px; height: 10%; background-size: 60%; background-image: url(./img/tab5/1.png); background-position-y: 10px;"></div>
                 <div style="height: 5%;"></div>
                 <div class="bb" style=" height: 35%; background-size: contain; background-image: url(./img/tab5/2.png);"></div>
                 <div style="height: 5%;"></div>
@@ -171,6 +176,13 @@
       </div>
 
 
+
+
+  <div class="balloon" id="acInfo"><span id="acInfo2"></span></div>
+  <div id="copyOk" class="copyOk2">복사되었습니다.</div>
+
+</div>
+
 <div class="swiper-container Mygalery">
     <!-- Additional required wrapper -->
     <div id="picInfo"style="position: absolute;   width: 20%;   color: pink;  top: 2%;  left: 2%;"></div>
@@ -229,6 +241,9 @@
         <div class="swiper-slide">
             <div class="imgArea" style="background-image: url(./img/pic/17.png);"></div>
         </div>
+        <div class="swiper-slide">
+            <div class="imgArea" style="background-image: url(./img/pic/18.png);"></div>
+        </div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
@@ -238,11 +253,6 @@
     <div class="swiper-button-next" ></div>
   
   </div>
-
-  <div class="balloon" id="acInfo"><span id="acInfo2"></span></div>
-  <div id="copyOk" class="copyOk2">복사되었습니다.</div>
-
-
 <script src="main.js"></script>
 </body>
 
